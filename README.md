@@ -1,4 +1,4 @@
-# Saffron Table
+# Asher's Bites
 
 A modern, responsive **5-page** website for a fictional Mediterranean restaurant. Built with plain HTML, CSS, and vanilla JavaScript — no build step, no dependencies.
 
