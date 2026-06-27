@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saffron Table — modern Mediterranean dining in the heart of the city. Seasonal plates, natural wines, warm hospitality." />
+  <title>Saffron Table · Modern Mediterranean</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Saffron Table home">
+        <span class="brand__mark">✦</span>
+        <span class="brand__name">Saffron Table</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#reserve" class="nav__cta">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Modern Mediterranean · Est. 2014</p>
+        <h1 class="hero__title">Where fire, herbs &amp; the sea meet the table.</h1>
+        <p class="hero__sub">Seasonal small plates, wood-fired mains, and a cellar of natural wines — served in a sun-warmed room downtown.</p>
+        <div class="hero__actions">
+          <a href="#reserve" class="btn btn--primary">Book a table</a>
+          <a href="#menu" class="btn btn--ghost">View the menu</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to content">↓</a>
+    </section>
+
+    <!-- ===== Highlights ===== -->
+    <section class="highlights container" aria-label="Highlights">
+      <div class="highlight">
+        <h3>Wood-fired kitchen</h3>
+        <p>Everything touched by flame — vegetables charred, fish grilled over olive wood.</p>
+      </div>
+      <div class="highlight">
+        <h3>Natural cellar</h3>
+        <p>120+ low-intervention bottles from small Mediterranean growers.</p>
+      </div>
+      <div class="highlight">
+        <h3>Market driven</h3>
+        <p>The menu shifts weekly with what the farms and the coast send us.</p>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="about container" id="about">
+      <div class="about__media" role="img" aria-label="Chef plating a dish in the open kitchen"></div>
+      <div class="about__text">
+        <p class="section__eyebrow">Our story</p>
+        <h2 class="section__title">A neighborhood table with a coastal soul.</h2>
+        <p>Saffron Table began as a tiny six-seat counter and a single wood oven. A decade later we still cook the way we started — simply, generously, and with respect for the seasons.</p>
+        <p>Chef Lena Moreau draws on summers spent along the Mediterranean, translating sun-drenched markets into plates meant for sharing. Pull up a chair, order a little of everything, and stay a while.</p>
+        <p class="about__sign">— Lena Moreau, Chef &amp; Owner</p>
+      </div>
+    </section>
+
+    <!-- ===== Menu ===== -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow">The menu</p>
+          <h2 class="section__title">Made to share</h2>
+          <p class="section__lead">A snapshot of the current season. Menus change weekly — ask your server about today's specials.</p>
+        </div>
+
+        <div class="menu__grid">
+          <div class="menu__col">
+            <h3 class="menu__cat">Small Plates</h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Charred octopus</span><span class="menu__dots"></span><span class="menu__price">18</span></div>
+                <p class="menu__desc">smoked paprika, white beans, salsa verde</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Burrata &amp; stone fruit</span><span class="menu__dots"></span><span class="menu__price">16</span></div>
+                <p class="menu__desc">grilled peach, basil oil, aged balsamic</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Saffron arancini</span><span class="menu__dots"></span><span class="menu__price">14</span></div>
+                <p class="menu__desc">taleggio, lemon aioli, herb dust</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Marinated olives</span><span class="menu__dots"></span><span class="menu__price">8</span></div>
+                <p class="menu__desc">citrus, fennel, warm flatbread</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__col">
+            <h3 class="menu__cat">From the Fire</h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Wood-grilled branzino</span><span class="menu__dots"></span><span class="menu__price">34</span></div>
+                <p class="menu__desc">whole fish, charred lemon, caper brown butter</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Lamb shoulder</span><span class="menu__dots"></span><span class="menu__price">38</span></div>
+                <p class="menu__desc">slow-roasted, harissa honey, mint yogurt</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Saffron risotto</span><span class="menu__dots"></span><span class="menu__price">26</span></div>
+                <p class="menu__desc">carnaroli, parmesan, charred spring onion</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Ember cauliflower</span><span class="menu__dots"></span><span class="menu__price">22</span></div>
+                <p class="menu__desc">tahini, pomegranate, dukkah <em>(v)</em></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__col">
+            <h3 class="menu__cat">Sweet</h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Olive oil cake</span><span class="menu__dots"></span><span class="menu__price">12</span></div>
+                <p class="menu__desc">orange blossom, crème fraîche</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Pistachio semifreddo</span><span class="menu__dots"></span><span class="menu__price">13</span></div>
+                <p class="menu__desc">honeycomb, sea salt</p>
+              </li>
+            </ul>
+            <h3 class="menu__cat menu__cat--mt">To Drink</h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Natural wine flight</span><span class="menu__dots"></span><span class="menu__price">24</span></div>
+                <p class="menu__desc">three pours, server's choice</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Saffron spritz</span><span class="menu__dots"></span><span class="menu__price">14</span></div>
+                <p class="menu__desc">aperol, cava, saffron tincture</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="menu__note">A 4% kitchen wellness charge is added to each check. Please let us know about allergies — most dishes can be adapted.</p>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow">The room</p>
+          <h2 class="section__title">A look inside</h2>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--tall g1"></figure>
+          <figure class="gallery__item g2"></figure>
+          <figure class="gallery__item g3"></figure>
+          <figure class="gallery__item gallery__item--wide g4"></figure>
+          <figure class="gallery__item g5"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Visit / Hours ===== -->
+    <section class="visit" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <p class="section__eyebrow">Visit us</p>
+          <h2 class="section__title">Find your seat</h2>
+          <div class="visit__block">
+            <h3>Address</h3>
+            <p>148 Marigold Street<br />Downtown, Riverside · 90210</p>
+          </div>
+          <div class="visit__block">
+            <h3>Hours</h3>
+            <ul class="hours">
+              <li><span>Tuesday – Thursday</span><span>5:00 – 10:00 pm</span></li>
+              <li><span>Friday – Saturday</span><span>5:00 – 11:30 pm</span></li>
+              <li><span>Sunday</span><span>11:00 am – 9:00 pm</span></li>
+              <li><span>Monday</span><span>Closed</span></li>
+            </ul>
+          </div>
+          <div class="visit__block">
+            <h3>Contact</h3>
+            <p><a href="tel:+15550123456">(555) 012-3456</a><br /><a href="mailto:hello@saffrontable.example">hello@saffrontable.example</a></p>
+          </div>
+        </div>
+        <div class="visit__map" role="img" aria-label="Map showing restaurant location downtown"></div>
+      </div>
+    </section>
+
+    <!-- ===== Reservation ===== -->
+    <section class="reserve" id="reserve">
+      <div class="container reserve__inner">
+        <div class="section__head">
+          <p class="section__eyebrow">Reservations</p>
+          <h2 class="section__title">Book a table</h2>
+          <p class="section__lead">Parties up to 6 can book online. For larger groups or private events, email us and we'll take care of the rest.</p>
+        </div>
+        <form class="form" id="reserveForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+              <small class="field__error" data-for="name"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <small class="field__error" data-for="email"></small>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+              <small class="field__error" data-for="date"></small>
+            </div>
+            <div class="field">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time" required />
+              <small class="field__error" data-for="time"></small>
+            </div>
+            <div class="field">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+              </select>
+              <small class="field__error" data-for="guests"></small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="notes">Special requests <span class="field__opt">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Allergies, celebrations, seating preferences…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Request reservation</button>
+          <p class="form__success" id="formSuccess" role="status" hidden>Thanks, <span id="successName"></span>! Your request has been received — we'll confirm by email shortly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="brand__mark">✦</span>
+        <span class="brand__name">Saffron Table</span>
+        <p>Modern Mediterranean dining, downtown since 2014.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>148 Marigold Street<br />Downtown, Riverside</p>
+      </div>
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <p>Tue–Sun · 5pm til late<br />Sun brunch from 11am</p>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <ul class="footer__social">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base container">
+      <p>© <span id="year"></span> Saffron Table. All rights reserved.</p>
+      <p>Made with care · <a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
