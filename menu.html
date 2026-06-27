@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Asher's Bites menu — seasonal Mediterranean small plates, wood-fired mains, desserts, and natural wines." />
+  <title>Menu · Asher's Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="menu">
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="brand" aria-label="Asher's Bites home">
+        <span class="brand__mark">✦</span>
+        <span class="brand__name">Asher's Bites</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="menu.html" data-nav="menu">Menu</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="gallery.html" data-nav="gallery">Gallery</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        <li><a href="contact.html" class="nav__cta" data-nav="reserve">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="page-banner__inner container">
+        <p class="page-banner__eyebrow">The menu</p>
+        <h1>Made to share</h1>
+        <p>A snapshot of the current season. Menus change weekly — ask your server about today's specials.</p>
+      </div>
+    </section>
+
+    <section class="menu">
+      <div class="container">
+        <div class="menu__grid">
+          <div class="menu__col">
+            <h3 class="menu__cat">Small Plates</h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Charred octopus</span><span class="menu__dots"></span><span class="menu__price">18</span></div>
+                <p class="menu__desc">smoked paprika, white beans, salsa verde</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Burrata &amp; stone fruit</span><span class="menu__dots"></span><span class="menu__price">16</span></div>
+                <p class="menu__desc">grilled peach, basil oil, aged balsamic</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Saffron arancini</span><span class="menu__dots"></span><span class="menu__price">14</span></div>
+                <p class="menu__desc">taleggio, lemon aioli, herb dust</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Marinated olives</span><span class="menu__dots"></span><span class="menu__price">8</span></div>
+                <p class="menu__desc">citrus, fennel, warm flatbread</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__col">
+            <h3 class="menu__cat">From the Fire</h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Wood-grilled branzino</span><span class="menu__dots"></span><span class="menu__price">34</span></div>
+                <p class="menu__desc">whole fish, charred lemon, caper brown butter</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Lamb shoulder</span><span class="menu__dots"></span><span class="menu__price">38</span></div>
+                <p class="menu__desc">slow-roasted, harissa honey, mint yogurt</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Saffron risotto</span><span class="menu__dots"></span><span class="menu__price">26</span></div>
+                <p class="menu__desc">carnaroli, parmesan, charred spring onion</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Ember cauliflower</span><span class="menu__dots"></span><span class="menu__price">22</span></div>
+                <p class="menu__desc">tahini, pomegranate, dukkah <em>(v)</em></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__col">
+            <h3 class="menu__cat">Sweet</h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Olive oil cake</span><span class="menu__dots"></span><span class="menu__price">12</span></div>
+                <p class="menu__desc">orange blossom, crème fraîche</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Pistachio semifreddo</span><span class="menu__dots"></span><span class="menu__price">13</span></div>
+                <p class="menu__desc">honeycomb, sea salt</p>
+              </li>
+            </ul>
+            <h3 class="menu__cat menu__cat--mt">To Drink</h3>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Natural wine flight</span><span class="menu__dots"></span><span class="menu__price">24</span></div>
+                <p class="menu__desc">three pours, server's choice</p>
+              </li>
+              <li class="menu__item">
+                <div class="menu__row"><span class="menu__name">Saffron spritz</span><span class="menu__dots"></span><span class="menu__price">14</span></div>
+                <p class="menu__desc">aperol, cava, saffron tincture</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="menu__note">A 4% kitchen wellness charge is added to each check. Please let us know about allergies — most dishes can be adapted.</p>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <h2>Ready to dine with us?</h2>
+        <p>Tables for up to 6 can be booked online.</p>
+        <div class="cta-band__actions">
+          <a href="contact.html" class="btn btn--primary">Reserve a table</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="brand__mark">✦</span>
+        <span class="brand__name">Asher's Bites</span>
+        <p>Modern Mediterranean dining, downtown since 2014.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul class="footer__links">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>148 Marigold Street<br />Downtown, Riverside</p>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <ul class="footer__social">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base container">
+      <p>© <span id="year"></span> Asher's Bites. All rights reserved.</p>
+      <p>Made with care · <a href="index.html">Home</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Asher's Bites — our story, our chef, and our coastal Mediterranean approach to cooking." />
+  <title>About · Asher's Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="brand" aria-label="Asher's Bites home">
+        <span class="brand__mark">✦</span>
+        <span class="brand__name">Asher's Bites</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="menu.html" data-nav="menu">Menu</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="gallery.html" data-nav="gallery">Gallery</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        <li><a href="contact.html" class="nav__cta" data-nav="reserve">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="page-banner__inner container">
+        <p class="page-banner__eyebrow">Our story</p>
+        <h1>A coastal soul, downtown</h1>
+        <p>How a six-seat counter and one wood oven grew into a neighborhood table.</p>
+      </div>
+    </section>
+
+    <section class="about container">
+      <div class="about__media" role="img" aria-label="Chef plating a dish in the open kitchen"></div>
+      <div class="about__text">
+        <p class="section__eyebrow">Est. 2014</p>
+        <h2 class="section__title">Simply, generously, in season.</h2>
+        <p>Asher's Bites began as a tiny six-seat counter and a single wood oven. A decade later we still cook the way we started — simply, generously, and with respect for the seasons.</p>
+        <p>Chef Lena Moreau draws on summers spent along the Mediterranean, translating sun-drenched markets into plates meant for sharing. Pull up a chair, order a little of everything, and stay a while.</p>
+        <p class="about__sign">— Lena Moreau, Chef &amp; Owner</p>
+      </div>
+    </section>
+
+    <section class="highlights container" aria-label="What we value">
+      <div class="highlight">
+        <h3>Wood-fired kitchen</h3>
+        <p>Everything touched by flame — vegetables charred, fish grilled over olive wood.</p>
+      </div>
+      <div class="highlight">
+        <h3>Natural cellar</h3>
+        <p>120+ low-intervention bottles from small Mediterranean growers.</p>
+      </div>
+      <div class="highlight">
+        <h3>Market driven</h3>
+        <p>The menu shifts weekly with what the farms and the coast send us.</p>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <h2>Come say hello</h2>
+        <p>We'd love to cook for you. Browse the menu or book a table.</p>
+        <div class="cta-band__actions">
+          <a href="menu.html" class="btn btn--ghost">See the menu</a>
+          <a href="contact.html" class="btn btn--primary">Reserve a table</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="brand__mark">✦</span>
+        <span class="brand__name">Asher's Bites</span>
+        <p>Modern Mediterranean dining, downtown since 2014.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul class="footer__links">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>148 Marigold Street<br />Downtown, Riverside</p>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <ul class="footer__social">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base container">
+      <p>© <span id="year"></span> Asher's Bites. All rights reserved.</p>
+      <p>Made with care · <a href="index.html">Home</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

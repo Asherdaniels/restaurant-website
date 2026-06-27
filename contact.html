@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Visit Asher's Bites — hours, address, contact details, and online reservations." />
+  <title>Contact &amp; Reservations · Asher's Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="brand" aria-label="Asher's Bites home">
+        <span class="brand__mark">✦</span>
+        <span class="brand__name">Asher's Bites</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="menu.html" data-nav="menu">Menu</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="gallery.html" data-nav="gallery">Gallery</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        <li><a href="contact.html" class="nav__cta" data-nav="reserve">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="page-banner__inner container">
+        <p class="page-banner__eyebrow">Visit us</p>
+        <h1>Find your seat</h1>
+        <p>Hours, location, and online reservations — we can't wait to host you.</p>
+      </div>
+    </section>
+
+    <!-- ===== Visit / Hours ===== -->
+    <section class="visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <div class="visit__block">
+            <h3>Address</h3>
+            <p>148 Marigold Street<br />Downtown, Riverside · 90210</p>
+          </div>
+          <div class="visit__block">
+            <h3>Hours</h3>
+            <ul class="hours">
+              <li><span>Tuesday – Thursday</span><span>5:00 – 10:00 pm</span></li>
+              <li><span>Friday – Saturday</span><span>5:00 – 11:30 pm</span></li>
+              <li><span>Sunday</span><span>11:00 am – 9:00 pm</span></li>
+              <li><span>Monday</span><span>Closed</span></li>
+            </ul>
+          </div>
+          <div class="visit__block">
+            <h3>Contact</h3>
+            <p><a href="tel:+15550123456">(555) 012-3456</a><br /><a href="mailto:hello@ashersbites.example">hello@ashersbites.example</a></p>
+          </div>
+        </div>
+        <div class="visit__map" role="img" aria-label="Map showing restaurant location downtown"></div>
+      </div>
+    </section>
+
+    <!-- ===== Reservation ===== -->
+    <section class="reserve" id="reserve">
+      <div class="container reserve__inner">
+        <div class="section__head">
+          <p class="section__eyebrow">Reservations</p>
+          <h2 class="section__title">Book a table</h2>
+          <p class="section__lead">Parties up to 6 can book online. For larger groups or private events, email us and we'll take care of the rest.</p>
+        </div>
+        <form class="form" id="reserveForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+              <small class="field__error" data-for="name"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <small class="field__error" data-for="email"></small>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+              <small class="field__error" data-for="date"></small>
+            </div>
+            <div class="field">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time" required />
+              <small class="field__error" data-for="time"></small>
+            </div>
+            <div class="field">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+              </select>
+              <small class="field__error" data-for="guests"></small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="notes">Special requests <span class="field__opt">(optional)</span></label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Allergies, celebrations, seating preferences…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Request reservation</button>
+          <p class="form__success" id="formSuccess" role="status" hidden>Thanks, <span id="successName"></span>! Your request has been received — we'll confirm by email shortly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="brand__mark">✦</span>
+        <span class="brand__name">Asher's Bites</span>
+        <p>Modern Mediterranean dining, downtown since 2014.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul class="footer__links">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>148 Marigold Street<br />Downtown, Riverside</p>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <ul class="footer__social">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base container">
+      <p>© <span id="year"></span> Asher's Bites. All rights reserved.</p>
+      <p>Made with care · <a href="index.html">Home</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
