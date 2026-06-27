@@ -20,6 +20,13 @@
     });
   }
 
+  /* ----- Active nav link (multi-page) ----- */
+  const currentPage = document.body.getAttribute("data-page");
+  if (currentPage) {
+    const activeLink = document.querySelector('.nav__menu a[data-nav="' + currentPage + '"]');
+    if (activeLink) activeLink.classList.add("is-active");
+  }
+
   /* ----- Current year in footer ----- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
